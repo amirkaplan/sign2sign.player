@@ -1,2 +1,6 @@
-<div class="window" [style.width]="windowInput.width" [style.height]="windowInput.height"
-[style.position]="absolute" [style.left]="windowInput.y" [style.right]="windowInput.x"></div>
+<div *ngFor="let w of windows"  
+class="window" 
+[style.width]="w.width" 
+[style.height]="w.height"
+[style.left]="w.left" 
+[style.top]="w.top"></div>

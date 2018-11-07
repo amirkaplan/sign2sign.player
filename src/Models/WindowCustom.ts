@@ -1,12 +1,21 @@
 
 export class WindowCustom{
     constructor(
-      public name: string = '',
-      public x: string = '',
-      public y: string = '',
-      public width: string= '',
       public height: string = '',
-      public style: string = '',
+      public id: string ='',
+      public layoutId: string = '', 
+      public left: string = '',
+      public top: string = '',
+      public width: string= '',
+      public zIndex: string ='',
+    ){}
+  };
+
+  export class Layout{
+    constructor(
+      public id: number,
+      public name: string,
+      public windows: WindowCustom[], 
     ){}
   };
 
